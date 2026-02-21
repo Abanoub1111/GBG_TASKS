@@ -1,0 +1,173 @@
+[
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "بصراحه الموبايل الجديد ده رائع جداً، البطاريه بتفضل شحنه كتير والكاميرا بتاخد صور تحفه"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.95,
+      "rationale": "The text expresses a very positive opinion about the new mobile phone, highlighting its long-lasting battery and excellent camera.",
+      "key_phrases": [
+        "رائع جداً",
+        "تحفه"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "أنا مش فاهم إزاي حد يشتري من المحل ده، الأسعار غاليه جداً والبضاعه مش أصليه خالص"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95,
+      "rationale": "The text expresses strong dissatisfaction with the store due to high prices and non-authentic goods.",
+      "key_phrases": [
+        "الأسعار غاليه جداً",
+        "البضاعه مش أصليه خالص"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "شفت المباراه النهارده وكانت حاجه تجنن بجد، اللعيبه كانوا متحمسين أوي والجمهور كان عامل ضجه رهيبه"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.95,
+      "rationale": "The text expresses excitement and enthusiasm for the match, highlighting the energy of the players and the crowd.",
+      "key_phrases": [
+        "حاجه تجنن بجد",
+        "متحمسين أوي",
+        "ضجه رهيبه"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "المسلسل الجديد ده زفت أوي، الحبكه ممله والممثلين مش عارفين يمثلوا أصلاً"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95,
+      "rationale": "The text contains strong negative language to describe the TV series, indicating a clear negative sentiment.",
+      "key_phrases": [
+        "زفت أوي",
+        "الحبكه ممله",
+        "مش عارفين يمثلوا أصلاً"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "بجد النادي الرياضي ده فخم جداً، المرافق حديثه والخدمات ممتازه وفي جو إحترافي كويس"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.95,
+      "rationale": "The text expresses admiration for the sports club, highlighting its modern facilities and excellent services.",
+      "key_phrases": [
+        "فخم جداً",
+        "المرافق حديثه",
+        "الخدمات ممتازه",
+        "جو إحترافي كويس"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "الصراحه النهارده كان يوم تعبان جداً، شغل كتير وزحمه مرعبه في الشوارع، بس الحمدلله رجعت البيت سالم"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.7,
+      "rationale": "The text describes a difficult day with a lot of work and terrible traffic, but ends on a somewhat positive note by being grateful to be home safe.",
+      "key_phrases": [
+        "يوم تعبان جداً",
+        "زحمه مرعبه",
+        "الحمدلله رجعت البيت سالم"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "يا جدعان الموبايل الجديد ده حاجه تحفه بجد، كاميراته ممتازه والبطاريه بتدوم لفتره طويله وشكله كلاسيكي جداً"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.95,
+      "rationale": "The text expresses admiration for the new mobile phone, highlighting its excellent cameras, long-lasting battery, and classic design.",
+      "key_phrases": [
+        "حاجه تحفه بجد",
+        "كاميراته ممتازه",
+        "بطاريه بتدوم لفتره طويله",
+        "شكله كلاسيكي جداً"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "مش فاهم إيه اللي بيحصل في البلد دي، كل يوم بنسمع أخبار مؤلمه عن حوادث وجرايم وفساد، والناس زهقانه خالص"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.9,
+      "rationale": "The text expresses frustration and mentions painful news about accidents, crimes, and corruption, indicating a strongly negative sentiment.",
+      "key_phrases": [
+        "أخبار مؤلمه",
+        "حوادث وجرايم وفساد",
+        "الناس زهقانه خالص"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "بصراحه الفيلم ده كان رائع جداً، القصه مشوقه والممثلين عملوا مجهود كبير، وكمان الديكور والإضاءه كانت علي مستوي عالي"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.95,
+      "rationale": "The text contains several positive adjectives and phrases, indicating a strong positive sentiment towards the film.",
+      "key_phrases": [
+        "رائع جداً",
+        "القصه مشوقه",
+        "مجهود كبير",
+        "علي مستوي عالي"
+      ]
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reasoning",
+    "input": {
+      "text": "والله الحكومه مش بتعمل حاجه عشان تحسن الأوضاع، كل اللي بيعملوه كلام فاضي ووعود كاذبه، يا ريت يصحوا بقي"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95,
+      "rationale": "The text expresses strong dissatisfaction and frustration with the government's actions, using phrases that convey a sense of emptiness and false promises.",
+      "key_phrases": [
+        "كلام فاضي",
+        "وعود كاذبه",
+        "مش بتعمل حاجه"
+      ]
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "بصراحه الموبايل الجديد ده رائع جداً، البطاريه بتفضل شحنه كتير والكاميرا بتاخد صور تحفه"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.98
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "أنا مش فاهم إزاي حد يشتري من المحل ده، الأسعار غاليه جداً والبضاعه مش أصليه خالص"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "شفت المباراه النهارده وكانت حاجه تجنن بجد، اللعيبه كانوا متحمسين أوي والجمهور كان عامل ضجه رهيبه"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.98
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "المسلسل الجديد ده زفت أوي، الحبكه ممله والممثلين مش عارفين يمثلوا أصلاً"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.98
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "بجد النادي الرياضي ده فخم جداً، المرافق حديثه والخدمات ممتازه وفي جو إحترافي كويس"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.98
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "الصراحه النهارده كان يوم تعبان جداً، شغل كتير وزحمه مرعبه في الشوارع، بس الحمدلله رجعت البيت سالم"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.62
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "يا جدعان الموبايل الجديد ده حاجه تحفه بجد، كاميراته ممتازه والبطاريه بتدوم لفتره طويله وشكله كلاسيكي جداً"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.98
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "مش فاهم إيه اللي بيحصل في البلد دي، كل يوم بنسمع أخبار مؤلمه عن حوادث وجرايم وفساد، والناس زهقانه خالص"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "بصراحه الفيلم ده كان رائع جداً، القصه مشوقه والممثلين عملوا مجهود كبير، وكمان الديكور والإضاءه كانت علي مستوي عالي"
+    },
+    "output": {
+      "sentiment": "positive",
+      "confidence": 0.99
+    }
+  },
+  {
+    "task": "sentiment_analysis",
+    "approach": "reliability",
+    "input": {
+      "text": "والله الحكومه مش بتعمل حاجه عشان تحسن الأوضاع، كل اللي بيعملوه كلام فاضي ووعود كاذبه، يا ريت يصحوا بقي"
+    },
+    "output": {
+      "sentiment": "negative",
+      "confidence": 0.95
+    }
+  }
+]
