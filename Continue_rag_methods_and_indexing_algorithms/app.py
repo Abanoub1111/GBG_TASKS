@@ -12,6 +12,16 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.document_loaders import UnstructuredPDFLoader
 from langchain_core.documents import Document
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
+from langchain_openai import AzureChatOpenAI
+from langchain_openai import AzureOpenAIEmbeddings
+import os
+from openai import AzureOpenAI
+
+# client = AzureOpenAI(
+#     api_version="2024-12-01-preview",
+#     azure_endpoint="https://gbgacademy-genai.openai.azure.com/",
+#     api_key=os.getenv("openai_api"),
+# )
 
 load_dotenv()
 
@@ -26,16 +36,36 @@ st.title("Chat with 5-CV with multiple RAG config")
 
 # ------------------- 1. LLM & EMBEDDINGS -------------------
 @st.cache_resource
+# def get_llm():
+#     return ChatGroq(
+#         model="llama-3.3-70b-versatile", 
+#         api_key=groq_api,
+#         temperature=0
+#     )
+@st.cache_resource
 def get_llm():
-    return ChatGroq(
-        model="llama-3.3-70b-versatile", 
-        api_key=groq_api,
+    return AzureChatOpenAI(
+        azure_endpoint="https://gbgacademy-genai.openai.azure.com/",
+        api_key=os.getenv("openai_api"),
+        api_version="2024-12-01-preview",
+        deployment_name="gpt-4.1-nano",   # your Azure deployment name
         temperature=0
     )
 
+
+# @st.cache_resource
+# def get_embeddings():
+#     return HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 @st.cache_resource
 def get_embeddings():
-    return HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    return AzureOpenAIEmbeddings(
+        azure_endpoint="https://gbgacademy-genai.openai.azure.com/",
+        api_key=os.getenv("openai_api"),
+        api_version="2024-12-01-preview",
+        model="text-embedding-3-small",
+        azure_deployment="text-embedding-3-small"  # your Azure deployment name
+    )
+
 
 # ------------------- 2. VECTOR DB SETUP -------------------
 def process_cvs(uploaded_files, strategy):
